@@ -1,21 +1,48 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import { StyleSheet, Text, View, YellowBox } from 'react-native';
+import { CheckBox } from './common/CheckBox';
+import Header from './common/Header';
+import LoginView from './view/LoginView';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+class App extends Component {
+constructor(){
+  super()
+  
+}
+
+componentDidMount(){
+  
+}
+
+componentDidUpdate(){
+  
+}
+
+  render(){
+    const {main} = styles
+      return (
+        <View style={main}>
+          
+        </View>
+      )
+  }
+}
+
+const arrowFunction = () => {
+    return(
+      <View style={styles.container}>
+      
     </View>
-  );
+    )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  main:{
+    flex:1,
+    backgroundColor: '#AAA',
   },
-});
+  
+})
+
+export default App
